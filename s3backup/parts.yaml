@@ -1,0 +1,26 @@
+name: s3backup
+apiVersion: 0.0.1
+kind: ksonnet.io/parts
+description: backup pvc to s3 or s3 compatible object storage
+author: Yuuichi Fujioka <fujioka.yuuichi@gmail.com>
+contributors: []
+repository:
+  type: git
+  url: https://github.com/yuuichi-fujioka/fuj
+bugs:
+  url: https://github.com/yuuichi-fujioka/fuj/issues
+keywords:
+- s3
+- pvc
+quickStart:
+  prototype: work.fujioka.pkg.s3backup
+  componentName: s3backup
+  flags:
+    name: backupjob
+    pvc: changeme
+    aws_accsess_key: changeme
+    aws_secret_key: changeme
+    bucket: backups
+    endpoint: null
+  comment: backup pvc to s3
+license: Apache 2.0
