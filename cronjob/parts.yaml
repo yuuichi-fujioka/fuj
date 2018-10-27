@@ -1,0 +1,23 @@
+name: cronjob
+apiVersion: 0.0.1
+kind: ksonnet.io/parts
+description: cronjob
+author: Yuuichi Fujioka <fujioka.yuuichi@gmail.com>
+contributors: []
+repository:
+  type: git
+  url: https://github.com/yuuichi-fujioka/fuj
+bugs:
+  url: https://github.com/yuuichi-fujioka/fuj/issues
+keywords:
+- cronjob
+quickStart:
+  prototype: work.fujioka.pkg.cronjob
+  componentName: cronjob
+  flags:
+    name: cronjob
+    image: alpine
+    script: '["sh", "-c", "echo hello"]'
+    schedule: 0 * * * *
+  comment: cronjob
+license: Apache 2.0

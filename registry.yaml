@@ -4,3 +4,6 @@ libraries:
   s3backup:
     path: s3backup
     version: master
+  cronjob:
+    path: cronjob
+    version: master
